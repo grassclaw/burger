@@ -2,8 +2,6 @@
 var connection = require('./connection.js');
 
 
-
-
 // Connect to MySQL database
 connection.connect(function(err) {
   if (err) {

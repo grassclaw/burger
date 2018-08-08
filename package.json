@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/shadowlaq/burger/issues"
   },
-  "homepage": "https://github.com/shadowlaq/burger#readme"
+  "homepage": "https://github.com/shadowlaq/burger#readme",
+  "dependencies": {
+    "express-handlebars": "^3.0.0"
+  }
 }
