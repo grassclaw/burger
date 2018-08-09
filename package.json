@@ -2,7 +2,14 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "Burger ordering app",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -12,13 +19,10 @@
     "url": "git+https://github.com/shadowlaq/burger.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shadowlaq",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shadowlaq/burger/issues"
   },
-  "homepage": "https://github.com/shadowlaq/burger#readme",
-  "dependencies": {
-    "express-handlebars": "^3.0.0"
-  }
+  "homepage": "https://github.com/shadowlaq/burger#readme"
 }
