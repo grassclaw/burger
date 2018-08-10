@@ -1,5 +1,6 @@
 // Node Dependency
 var mysql = require('mysql');
+require("dotenv").config();
 var connection;
 
 // For Heroku Deployment vs. Local MySQL Database
@@ -8,11 +9,11 @@ if(process.env.JAWSDB_URL){
 }
 else{
   connection = mysql.createConnection({
-    host     : 'localhost',
-    port     : 8889,
-    user     : 'root',
-    password : 'root', 
-    database : 'burgers_db' 
+    host     : process.env.my_host,
+    port     : process.env.my_port,
+    user     : process.env.my_user,
+    password : process.env.my_password, 
+    database : process.env.my_database 
   });
 }
 
